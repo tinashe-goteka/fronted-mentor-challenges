@@ -15,26 +15,28 @@ body {
   justify-content: center;
   flex-direction: column;
   color: antiquewhite;
+  background-color: #232730;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 .card {
-  max-width: 85%;
+  max-width: 340px;
   margin: auto;
-  border-radius: 10px;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#171e28+0,4e5a8c+100&1+0,0.86+100 */
-  background: -moz-linear-gradient(45deg,  rgba(23,30,40,1) 0%, rgba(78,90,140,0.86) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg,  rgba(23,30,40,1) 0%,rgba(78,90,140,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg,  rgba(23,30,40,1) 0%,rgba(78,90,140,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171e28', endColorstr='#db4e5a8c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
-
-.card-inner-container {
-  margin: 1.5em 20px;
+  border-radius: 20px;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#171e28+0,4e5a8c+100&1+0,0.86+100 */
+  background: -moz-linear-gradient(180deg,  rgba(30, 37, 45, 1) 0%, rgba(20, 21, 25, 0.86) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(180deg,  rgba(30, 37, 45, 1) 0%, rgba(20, 21, 25, 0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(180deg,  rgba(30, 37, 45, 1) 0%, rgba(20, 21, 25, 0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171e28', endColorstr='#db4e5a8c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .ratings {
@@ -46,8 +48,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 2rem;
   background-color: rgba(107, 123, 189, 0.397);
 }
@@ -55,7 +57,7 @@ body {
 button {
   background-color: #FC7613;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   color: rgb(255, 255, 255);
   font-size: 1rem;
   padding: 10px 20px;
