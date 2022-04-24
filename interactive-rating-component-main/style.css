@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: rgb(51, 53, 65);
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: antiquewhite;
+}
+
+.card {
+  max-width: 85%;
+  margin: auto;
+  border-radius: 10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#171e28+0,4e5a8c+100&1+0,0.86+100 */
+  background: -moz-linear-gradient(45deg,  rgba(23,30,40,1) 0%, rgba(78,90,140,0.86) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba(23,30,40,1) 0%,rgba(78,90,140,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(23,30,40,1) 0%,rgba(78,90,140,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171e28', endColorstr='#db4e5a8c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.card-inner-container {
+  margin: 1.5em 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  background-color: rgba(107, 123, 189, 0.397);
+}
+
+button {
+  background-color: #FC7613;
+  border: none;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+.thanks-state{
+  display: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
