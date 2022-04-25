@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
-html, body {
+* {
   padding: 0;
-  height: 100%;
   margin: 0;
+}
+
+html, body{
+  height: 100%;
 }
 
 body {
@@ -18,11 +21,13 @@ body {
 
 h2 {
   color: whitesmoke;
+  margin-bottom: 0.8rem;
 }
 
 .card {
   max-width: 320px;
   margin: auto;
+  margin-top: auto;
   border-radius: 20px;
   padding: 2em;
   background-color: hsl(213, 19%, 18%);
@@ -51,14 +56,15 @@ h2 {
   background-color: rgba(211, 211, 211, 0.145);
 }
 
-.ratings .circle:hover {
+.rating:hover {
   background-color:#FC7613 ;
   cursor: pointer;
   color: whitesmoke;
 }
 
-.ratings .circle:active {
+.rating:focus {
   background-color: hsl(217, 12%, 63%);
+  color: whitesmoke;
 }
 
 button {
@@ -95,6 +101,7 @@ button:hover{
   align-self: center;
   color: #fd8b39aa;
   padding:0 1.5rem;
+  margin: 0;
 }
 
 .prompt .circle {

@@ -11,48 +11,41 @@
 
 </head>
 <body>
-
   <!-- Rating state start -->
-    <div class="card">
-      <div class="rating-state">
-        <div class="circle"><img src="images/icon-star.svg" alt="star icon" class=" star-icon"></div>
-        <div class="text">
-          <h2>How did we do?</h2>
-          <p>Please let us know how we did with your support request. All feedback is appreciated
-            to help us improve our offering!</p>
-        </div>
-        <div class="ratings">
-          <div class="rating circle"  id="1">1</div>
-          <div class="rating circle" id="2">2</div>
-          <div class="rating circle" id="3">3</div>
-          <div class="rating circle" id="4">4</div>
-          <div class="rating circle" id="5">5</div>
-        </div>
-        <button id="submit">SUBMIT</button>
+  <div class="card">
+    <div class="rating-state">
+      <div class="circle"><img src="images/icon-star.svg" alt="star icon" class=" star-icon"></div>
+      <div class="text">
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
       </div>
-
-      <!-- Thank you state start -->
-
-      <div class="thanks-state">
-        <img src="images/illustration-thank-you.svg" alt="thank you image" class="thanks-image">
-        <p class="circle prompt">You selected &nbsp; <span id="submited-rating"></span> &nbsp; out of 5</p>
-        <div class="text">
-          <h2>Thank you!</h2>
-          <p>
-            We appreciate you taking the time to give a rating. If you ever need more support,
-            don’t hesitate to get in touch!
-          </p>
-        </div>
+      <div class="ratings">
+        <div class="rating circle" id="1" tabindex="1">1</div>
+        <div class="rating circle" id="2" tabindex="2">2</div>
+        <div class="rating circle" id="3" tabindex="3">3</div>
+        <div class="rating circle" id="4" tabindex="4">4</div>
+        <div class="rating circle" id="5" tabindex="5">5</div>
       </div>
-        <!-- Thank you state end -->
+      <button id="submit">SUBMIT</button>
     </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thanks-state">
+      <img src="images/illustration-thank-you.svg" alt="thank you image" class="thanks-image">
+      <p class="circle prompt">You selected &nbsp; <span id="submited-rating"></span> &nbsp; out of 5</p>
+      <div class="text">
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+      <!-- Thank you state end -->
   </div>
 
-  <!-- Rating state end -->
-
-  
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Tinashe Goteka</a>.
