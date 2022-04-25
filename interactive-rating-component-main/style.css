@@ -1,42 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 html, body {
-  background-color: rgb(51, 53, 65);
   padding: 0;
   height: 100%;
   margin: 0;
 }
 
 body {
+  font-family: 'Overpass', sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: antiquewhite;
-  background-color: #232730;
+  background-color: hsl(216, 12%, 8%);
   font-size: 15px;
+  color: hsl(217, 12%, 63%);
 }
 
-h1 {
-  font-size: 2em;
+h2 {
+  color: whitesmoke;
 }
 
 .card {
-  max-width: 340px;
+  max-width: 320px;
   margin: auto;
   border-radius: 20px;
   padding: 2em;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.rating-state, .thanks-state{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#171e28+0,4e5a8c+100&1+0,0.86+100 */
-  background: -moz-linear-gradient(180deg,  rgba(30, 37, 45, 1) 0%, rgba(20, 21, 25, 0.86) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(180deg,  rgba(30, 37, 45, 1) 0%, rgba(20, 21, 25, 0.86) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(180deg,  rgba(30, 37, 45, 1) 0%, rgba(20, 21, 25, 0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171e28', endColorstr='#db4e5a8c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+  gap: 1.4rem;
 }
 
 .ratings {
@@ -48,10 +43,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.8rem;
+  max-width: fit-content;
+  min-width: 2.8rem;
+  max-width: fit-content;
   height: 2.8rem;
   border-radius: 2rem;
-  background-color: rgba(107, 123, 189, 0.397);
+  background-color: rgba(211, 211, 211, 0.145);
+}
+
+.ratings .circle:hover {
+  background-color:#FC7613 ;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.ratings .circle:active {
+  background-color: hsl(217, 12%, 63%);
 }
 
 button {
@@ -60,11 +67,38 @@ button {
   border-radius: 20px;
   color: rgb(255, 255, 255);
   font-size: 1rem;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
-.thanks-state{
-  display: none;
+
+button:hover{
+  cursor: pointer;
+  background-color: white;
+  color:#FC7613;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Thanks state */
+.thanks-state{
+  display: none;
+  align-items: center;
+}
+.thanks-image {
+  object-fit: contain;
+  width: 50%;
+  justify-self: center;
+}
+
+.prompt {
+  align-self: center;
+  color: #fd8b39aa;
+  padding:0 1.5rem;
+}
+
+.prompt .circle {
+  height: fit-content;
+}
+.thanks-state .text{
+  text-align: center;
+}
