@@ -84,6 +84,7 @@ button:hover{
   display: none;
   align-items: center;
 }
+
 .thanks-image {
   object-fit: contain;
   width: 50%;
