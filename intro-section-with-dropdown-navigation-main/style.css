@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.125rem;
+  color: #828282;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+  padding-top: 10px;
+}
+
+.menu {
+  position: absolute;
+  height: 100%;
+  max-width: fit-content;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  padding: 2em 2em 4em 2em;
+  display: none;
+  transition: display ease-in-out 250ms;
+} 
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.left-menu, .login-reg {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: 1.125rem;
+}
+
+.sub-menu {
+  margin: 1.1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  display: none;
+}
+
+.sub-menu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.9em;
+}
+
+.ham-menu {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.close-menu {
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+}
+
+.close-menu-btn {
+  margin-left: auto;
+}
+
+.hero-image img{
+  width: 100%;
+}
+
+.hero-image #desktop {
+  display: none;
+}
+
+.hero-heading {
+  font-weight: 700;
+  color: rgb(11, 11, 11);
+  font-size: clamp(2rem, 6vw + 1.125rem, 4rem);
+}
+
+.hero-heading, .hero-text{
+  text-align: center;
+}
+
+.hero-cta {
+  margin: 20px;
+}
+
+#learn-more {
+  margin-top: 2.7em;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 16px;
+  display: block;
+  margin: auto;
+}
+
+.showcase {
+  margin-top: 2.7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.showcase img {
+  max-width: 15%;
+  height: auto;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+/* -----------------Desktop Layout-------------- */
+@media only screen and (min-width: 40em) {
+
+  .hero-section {
+    display: grid;
+    gap: 5vw;
+    grid-template-columns: 1fr 1fr;
+    width: min(90vw, 70rem);
+    margin: auto;
+  }
+  
+  .hero-image {
+    order: 1;
+  }
+  .hero-image #mobile{
+    display: none;
+  }
+  .hero-image #desktop {
+    display: block;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .hero-heading, .hero-text{
+    text-align: left;
+  }
+
+  #learn-more{
+    margin-left: 0;
+    margin-right: 1em;
+    padding: 1em 2em;
+  }
+
+  #learn-more:hover {
+    background-color: #ffffff;
+    color: rgb(21, 21, 21);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+  }
+
+  .left-menu, .login-reg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 2em;
+  }
+
+  .login-reg {
+    margin-left: auto;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .sub-menu {
+    /* margin-top: 1.4em; */
+    padding: 1.8em 1.8em;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 0.6em;
+    box-shadow: 0px 0px 40px 18px #c2c2c23a;
+    display: none;
+  }
+
+  /* .sub-menu li {
+    float: none;
+    text-align: left;
+  } */
+  
+  .menu a:hover {
+    color: rgb(21, 21, 21);
+  }
+  
+  .dropdown-active {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  .login-reg li:last-child {
+    border: 1px solid hsl(0, 0%, 8%);
+    padding: 0.5em 1em;
+    border-radius: 16px;
+  }
+}
