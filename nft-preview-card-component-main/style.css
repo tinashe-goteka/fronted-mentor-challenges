@@ -19,6 +19,8 @@ body {
     color: white;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
+    color: #98b6da;
+    font-weight: 300;
 }
 
 .card {
@@ -29,24 +31,55 @@ body {
     padding: 1.5em;
 }
 
-h1 {
+.nft-name {
     font-size: 1.3rem;
     font-weight: 600;
+    color: whitesmoke;
+}
+
+.nft-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 hr {
     border:1px solid hsl(215, 32%, 27%);
 }
 
+.nft {
+    position: relative;
+}
+
 .item-image {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-.description {
-    color: #98b6da;
-    font-weight: 300;
+#view-icon {
+    position: absolute;
+    display: none;
+    left: 0; right: 0; margin: auto;
+    top: 0; bottom: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 255, 247, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overlay:hover{
+    background-color:  rgba(0, 255, 247, 0.359);
+    cursor: pointer;
+}
+
+.overlay:hover + #view-icon {
+    display: block;
 }
 
 .price, .time-left, .creator-row {
@@ -77,8 +110,12 @@ hr {
 }
 
 .creator-row span{
-    color: #98b6da;
+    color: whitesmoke;
 }
 
+.creator-row span:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
